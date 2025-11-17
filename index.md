@@ -40,11 +40,11 @@ title: "Zeyu Yan"
         <!-- LinkedIn -->
         <a href="https://www.linkedin.com/in/zeyu-yan"
           class="icon-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-          <img src="/assets/img/icons/linkedin.svg" alt="LinkedIn" class="icon-img">
+          <img src="{{ '/assets/img/icons/linkedin.svg' | relative_url }}" alt="LinkedIn" class="icon-img">
         </a>
 
         <!-- CV -->
-        <a href="{{ '/assets/files/Zeyu-Yan-CV.pdf' | relative_url }}"
+        <a href="{{ '/assets/files/Zeyu_Yan_CV.pdf' | relative_url }}"
           class="icon-link" target="_blank" rel="noopener noreferrer" aria-label="Curriculum Vitae">
           <img src="{{ '/assets/img/icons/cv.svg' | relative_url }}" alt="CV" class="icon-img">
         </a>
