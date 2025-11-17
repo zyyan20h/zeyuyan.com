@@ -367,10 +367,10 @@
 
 .pub-image {
   width: 100%;
-  margin-bottom: 0.75rem;
-  border-radius: 6px;
+  margin-bottom: 0;
+  border-radius: 10px;
   overflow: hidden;      /* clip corners */
-  background: #111;      /* fallback background */
+  background: #f2f2f2;      /* fallback background */
 }
 
 .pub-image img {

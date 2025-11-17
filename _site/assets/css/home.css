@@ -261,13 +261,13 @@
   align-items: start;
 }
 
-/* Publication image */
+/* Publication image
 .pub-image img {
   width: 100%;
   height: auto;
   border-radius: 10px;
   background: #f2f2f2;
-}
+} */
 
 /* Venue + award */
 /* Venue + inline award */
@@ -344,10 +344,10 @@
   border-color: #d3cfc7;
 }
 
-.pub-image {
+/* .pub-image {
   position: relative;
   width: 100%;
-  padding-top: 56.25%;  /* 16:9 aspect ratio */
+  padding-top: 56.25%;  
   overflow: hidden;
   border-radius: 10;
   background: #f2f2f2;
@@ -358,5 +358,24 @@
   top: 0; left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;  /* ensures proper cropping */
+  object-fit: cover;  
+} */
+
+/* -------------------------
+   Publication images
+   ------------------------- */
+
+.pub-image {
+  width: 100%;
+  margin-bottom: 0;
+  border-radius: 10px;
+  overflow: hidden;      /* clip corners */
+  background: #f2f2f2;      /* fallback background */
+}
+
+.pub-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;     /* fill the box while preserving aspect ratio */
 }
