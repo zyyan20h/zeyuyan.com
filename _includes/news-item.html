@@ -3,7 +3,7 @@
 <li class="news-item">
   <span class="news-date">{{ item.date | date: "%b-%d-%Y" }}</span>
   <span class="news-sep">|</span>
-  <img src="{{ icon_path }}" class="news-icon-img" alt="{{ item.type }} icon">
+  <img src="{{ icon_path | relative_url }}" class="news-icon-img" alt="{{ item.type }} icon">
   <span class="news-text">
     {% if item.link %}
       <a href="{{ item.link }}" target="_blank" rel="noopener noreferrer">

@@ -8,9 +8,9 @@ title: "Zeyu Yan"
   <div class="home-sidebar">
     <div class="home-top-left">
       <!-- Avatar will go here -->
-      <img src="/assets/img/headshot.webp"
-          alt="Portrait of Zeyu Yan"
-          class="home-avatar">
+      <img src="{{ '/assets/img/headshot.webp' | relative_url }}"
+        alt="Portrait of Zeyu Yan"
+        class="home-avatar">
     </div>
 
     <div class="home-top-middle">
@@ -28,13 +28,13 @@ title: "Zeyu Yan"
 
         <!-- Email -->
         <a href="mailto:zeyuy@umd.edu" class="icon-link" aria-label="Email">
-          <img src="/assets/img/icons/email.svg" alt="Email" class="icon-img">
+          <img src="{{ '/assets/img/icons/email.svg' | relative_url }}" alt="Email" class="icon-img">
         </a>
 
         <!-- Google Scholar -->
         <a href="https://scholar.google.com/citations?hl=en&user=hZLGZQIAAAAJ"
           class="icon-link" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar">
-          <img src="/assets/img/icons/scholar.svg" alt="Google Scholar" class="icon-img">
+          <img src="{{ '/assets/img/icons/scholar.svg' | relative_url }}" alt="Google Scholar" class="icon-img">
         </a>
 
         <!-- LinkedIn -->
@@ -44,9 +44,9 @@ title: "Zeyu Yan"
         </a>
 
         <!-- CV -->
-        <a href="/assets/files/Zeyu_Yan_CV.pdf"
+        <a href="{{ '/assets/files/Zeyu-Yan-CV.pdf' | relative_url }}"
           class="icon-link" target="_blank" rel="noopener noreferrer" aria-label="Curriculum Vitae">
-          <img src="/assets/img/icons/cv.svg" alt="CV" class="icon-img">
+          <img src="{{ '/assets/img/icons/cv.svg' | relative_url }}" alt="CV" class="icon-img">
         </a>
 
       </div>

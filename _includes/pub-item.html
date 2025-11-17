@@ -2,7 +2,7 @@
 
     <!-- Left: image -->
     <div class="pub-image">
-        <img src="{{ pub.image }}" alt="publication image">
+        <img src="{{ pub.image | relative_url }}" alt="publication image" class="pub-image">
     </div>
 
     <!-- Right: metadata -->
@@ -14,7 +14,7 @@
 
     {% if pub.award %}
         <span class="pub-award">
-        <img src="/assets/img/news-icons/award.svg" class="pub-award-icon">
+        <img src="{{ '/assets/img/news-icons/award.svg' | relative_url }}" class="pub-award-icon">
         {{ pub.award }}
         </span>
     {% endif %}
@@ -40,7 +40,7 @@
         <div class="pub-buttons">
 
             {% if has_pdf %}
-                <a class="pub-btn" href="{{ pub.pdf }}" target="_blank">PDF</a>
+                <a class="pub-btn" href="{{ pub.pdf | relative_url }}" target="_blank" rel="noopener noreferrer">PDF</a>
             {% endif %}
 
             {% if has_doi %}
