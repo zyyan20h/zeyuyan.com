@@ -1,0 +1,153 @@
+- year: 2025
+  venue: UIST 2025
+  award: "Best Paper Award & Special Recognition for Sustainability in Demo"
+  title: "DissolvPCB: Fully Recyclable 3D-Printed Electronics Using Liquid Metal Conductors and PVA Substrates"
+  authors: "Zeyu Yan, Su Hwan Hong, Josiah Hester, Tingyu Cheng, Huaishu Peng"
+  image: "/assets/img/pubs/dissolvpcb.png"
+  pdf: "/assets/files/papers/dissolvpcb.pdf"
+  doi: "https://doi.org/10.1145/3746059.3747604"
+  video: "https://www.youtube.com/watch?v=OrRQQnrCR5Q"
+  code: "https://github.com/zyyan20h/DissolvPCB"
+
+- year: 2025
+  venue: CHI 2025
+  award: "Best Paper Honorable Mention"
+  title: "PCB Renewal: Iterative Reuse of PCB Substrates for Sustainable Electronic Making"
+  authors: "Zeyu Yan, Advait Vartak, Jiasheng Li, Zining Zhang, Huaishu Peng"
+  image: "/assets/img/pubs/pcbrenewal.png"
+  pdf: "/assets/files/papers/renewal.pdf"
+  doi: "https://doi.org/10.1145/3706598.3714276"
+  video: "https://www.youtube.com/watch?v=Vnjr6-BfoNI"
+  code: "https://github.com/zyyan20h/PCBRenewal"
+
+- year: 2025
+  venue: CHI 2025
+  # award: ""
+  title: "Make Making Sustainable: Exploring Sustainability Practices, Challenges, and Opportunities in Making Activities"
+  authors: "Zeyu Yan, Mrunal Dhaygude, Huaishu Peng"
+  image: "/assets/img/pubs/interview.png"
+  pdf: "/assets/files/papers/making.pdf"
+  doi: "https://doi.org/10.1145/3706598.3713665"
+  # video: ""
+  # code: ""
+
+- year: 2025
+  venue: DIS 2025
+  # award: ""
+  title: "Cybernetic Marionette: Channeling Collective Agency Through a Wearable Robot in a Live Dancer-Robot Duet"
+  authors: "Anup Sathya, Jiasheng Li, Zeyu Yan, Adriane Fang, Bill Kules, Jonathan D. Martin, Huaishu Peng"
+  image: "/assets/img/pubs/calico2.png"
+  pdf: "/assets/files/papers/calico2.pdf"
+  doi: "https://doi.org/10.1145/3715336.3735828"
+  video: "https://www.youtube.com/watch?v=8KnsGra9wcI"
+  # code: ""
+
+- year: 2025
+  venue: IEEE VR 2025
+  # award: ""
+  title: "Comparing Vibrotactile and Skin-Stretch Haptic Feedback for Conveying Spatial Information of Virtual Objects to Blind VR Users"
+  authors: "Jiasheng Li, Zining Zhang, Zeyu Yan, Yuhang Zhao, Huaishu Peng"
+  image: "/assets/img/pubs/blindvrhaptics.png"
+  pdf: "/assets/files/papers/blindvrhaptics.pdf"
+  doi: "https://doi.org/10.1109/VR59515.2025.00091"
+  # video: ""
+  # code: ""
+
+- year: 2024
+  venue: CHI 2024
+  award: "Winner of Special Recognition for Sustainability Practices"
+  title: "SolderlessPCB: Reusing Electronic Components in PCB Prototyping through Detachable 3D Printed Housings"
+  authors: "Zeyu Yan, Jiasheng Li, Zining Zhang, Huaishu Peng"
+  image: "/assets/img/pubs/solderless.png"
+  pdf: "/assets/files/papers/solderless.pdf"
+  doi: "https://doi.org/10.1145/3613904.3642765"
+  video: "https://www.youtube.com/watch?v=legkxug_Dg0&t=13s"
+  code: "https://github.com/zyyan20h/solderlessPCB"
+
+- year: 2024
+  venue: UIST 2024
+  # award: ""
+  title: "JetUnit: Rendering Diverse Force Feedback in Virtual Reality Using Water Jets"
+  authors: "Zining Zhang, Jiasheng Li, Zeyu Yan, Jun Nishida, Huaishu Peng"
+  image: "/assets/img/pubs/jetunit.png"
+  pdf: "/assets/files/papers/jetunit.pdf"
+  doi: "https://doi.org/10.1145/3654777.3676440"
+  video: "https://www.youtube.com/watch?v=ES31QBIXrLQ"
+  # code: ""
+
+- year: 2024
+  venue: UIST 2024
+  # award: ""
+  title: "Rhapso: Automatically Embedding Fiber Materials into 3D Prints for Enhanced Interactivity"
+  authors: "Daniel Ashbrook, Wei Ju Lin, Nicholas Bentley, Diana Soponar, Zeyu Yan, Valkyrie Savage, Lung Pan Cheng, Huaishu Peng, Hyunyoung Kim"
+  image: "/assets/img/pubs/rhapso.png"
+  pdf: "/assets/files/papers/rhapso.pdf"
+  doi: "https://doi.org/10.1145/3654777.3676468"
+  # video: ""
+  code: "https://github.com/fetlab/rhapso"
+
+- year: 2023
+  venue: UIST 2023
+  # award: ""
+  title: "3D Printing Magnetophoretic Displays"
+  authors: "Zeyu Yan, Hsuanling Lee, Liang He, Huaishu Peng"
+  image: "/assets/img/pubs/magnetophoretic.png"
+  pdf: "/assets/files/papers/magnetophoretic.pdf"
+  doi: "https://doi.org/10.1145/3586183.3606804"
+  video: "https://www.youtube.com/watch?v=zzijtgQIkPY"
+  # code: ""
+
+- year: 2023
+  venue: CHI 2023
+  award: "Best Paper Honorable Mention"
+  title: "Toucha11y: Making Inaccessible Public Touchscreens Accessible"
+  authors: "Jiasheng Li, Zeyu Yan, Arush Shah, Jonathan Lazar, Huaishu Peng"
+  image: "/assets/img/pubs/toucha11y.png"
+  pdf: "/assets/files/papers/toucha11y.pdf"
+  doi: "https://doi.org/10.1145/3544548.3581254"
+  video: "https://www.youtube.com/watch?v=dqfhE42zB1I&t=27s"
+  # code: ""
+
+- year: 2022
+  venue: UIST 2022
+  award: "Core77 Student Notable Tools Award | People's Best Demo"
+  title: "Fibercuit: Prototyping High-Resolution Flexible and Kirigami Circuits with a Fiber Laser Engraver"
+  authors: "Zeyu Yan, Anup Sathya, Sahra Yusuf, Jyh-Ming Lien, Huaishu Peng"
+  image: "/assets/img/pubs/fibercuit.png"
+  pdf: "/assets/files/papers/fibercuit.pdf"
+  doi: "https://doi.org/10.1145/3526113.3545652"
+  video: "https://www.youtube.com/watch?v=TNks8ntgqOE&t=151s"
+  # code: ""
+
+- year: 2022
+  venue: UIST 2022
+  # award: ""
+  title: "TangibleGrid: Tangible Web Layout Design for Blind Users"
+  authors: "Jiasheng Li, Zeyu Yan, Ebrima Haddy Jarjue, Ashrith Shetty, Huaishu Peng"
+  image: "/assets/img/pubs/tangiblegrid.png"
+  pdf: "/assets/files/papers/tangiblegrid.pdf"
+  doi: "https://doi.org/10.1145/3526113.3545627"
+  video: "https://www.youtube.com/watch?v=pHvY-N3Cc8I&t=21s"
+  # code: ""
+
+- year: 2021
+  venue: UIST 2021
+  # award: ""
+  title: "FabHydro: Printing Interactive Hydraulic Devices with an Affordable SLA 3D Printer"
+  authors: "Zeyu Yan, Huaishu Peng"
+  image: "/assets/img/pubs/fabhydro.png"
+  pdf: "/assets/files/papers/fabhydro.pdf"
+  doi: "https://doi.org/10.1145/3472749.3474751"
+  video: "https://www.youtube.com/watch?v=DBX4-j_664s"
+  # code: ""
+
+- year: 2018
+  venue: UIST 2018
+  # award: ""
+  title: "4DMesh: 4D Printing Morphing Non-Developable Mesh Surfaces"
+  authors: "Guanyun Wang, Humphrey Yang, Zeyu Yan, Nurcan Gecer Ulu, Ye Tao, Jianzhe Gu, Levent Burak Kara, Lining Yao"
+  image: "/assets/img/pubs/4dmesh.png"
+  pdf: "/assets/files/papers/4dmesh.pdf"
+  doi: "https://doi.org/10.1145/3242587.3242625"
+  video: "https://www.youtube.com/watch?v=mdsUe_jVPFs"
+  # code: ""

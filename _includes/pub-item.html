@@ -1,0 +1,62 @@
+<div class="pub-item">
+
+    <!-- Left: image -->
+    <div class="pub-image">
+        <img src="{{ pub.image }}" alt="publication image">
+    </div>
+
+    <!-- Right: metadata -->
+    <div class="pub-info">
+
+    <!-- Venue + award -->
+    <div class="pub-venue">
+    <strong>{{ pub.venue }}</strong>
+
+    {% if pub.award %}
+        <span class="pub-award">
+        <img src="/assets/img/news-icons/award.svg" class="pub-award-icon">
+        {{ pub.award }}
+        </span>
+    {% endif %}
+    </div>
+
+        <!-- Title -->
+        <div class="pub-title">
+        {{ pub.title }}
+        </div>
+
+        <!-- Authors -->
+        <div class="pub-authors">
+        {{ pub.authors }}
+        </div>
+
+        <!-- Buttons -->
+        {% assign has_pdf   = pub.pdf   and pub.pdf   != "" and pub.pdf   != nil %}
+        {% assign has_doi   = pub.doi   and pub.doi   != "" and pub.doi   != nil %}
+        {% assign has_video = pub.video and pub.video != "" and pub.video != nil %}
+        {% assign has_code  = pub.code  and pub.code  != "" and pub.code  != nil %}
+
+        {% if has_pdf or has_doi or has_video or has_code %}
+        <div class="pub-buttons">
+
+            {% if has_pdf %}
+                <a class="pub-btn" href="{{ pub.pdf }}" target="_blank">PDF</a>
+            {% endif %}
+
+            {% if has_doi %}
+            <a class="pub-btn" href="{{ pub.doi }}" target="_blank">DOI</a>
+            {% endif %}
+
+            {% if has_video %}
+            <a class="pub-btn" href="{{ pub.video }}" target="_blank">Video</a>
+            {% endif %}
+
+            {% if has_code %}
+            <a class="pub-btn" href="{{ pub.code }}" target="_blank">Link</a>
+            {% endif %}
+
+        </div>
+        {% endif %}
+
+    </div>
+</div>

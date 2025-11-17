@@ -1,0 +1,23 @@
+/* -------------------------
+   LAYOUT
+   Page width and spacing
+   ------------------------- */
+
+/* Main page container */
+.page-content {
+  max-width: 960px;     /* limit line length, good for reading */
+  margin: 2.5rem auto;  /* top/bottom margin, auto left/right centers it */
+  padding: 0 1.5rem;    /* left/right padding so text does not touch edges */
+  background: #f2f2f2;  /* white content area on top of grey body */
+  border-radius: 0;  /* slightly rounded corners */
+  box-shadow: none; /* soft shadow */
+}
+
+/* On small screens, let it breathe less and go edge to edge */
+@media (max-width: 720px) {
+  .page-content {
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+}

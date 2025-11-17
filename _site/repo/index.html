@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Related Work</title>
+
+    <!-- font -->
+    <!-- Inter font: clean modern typeface -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Modular stylesheets -->
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/css/layout.css">
+    <link rel="stylesheet" href="/assets/css/components.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
+    <link rel="stylesheet" href="/assets/css/home.css">
+</head>
+  <body id="top">
+    <!-- header -->
+    
+    
+
+    <!-- content -->
+    <main class="page-content">
+      <h1 id="related-work">Related Work</h1>
+
+<p>This section can host your curated related work content. It sits at <code>/repo</code> for now so everything is in one repository.</p>
+
+<h3 id="structure-ideas">Structure ideas</h3>
+<ul>
+  <li>Use headings for categories</li>
+  <li>Link out to papers and demos</li>
+  <li>Add small thumbnails in <code>/assets</code> if helpful</li>
+</ul>
+
+<p>Back to <a href="/">home</a>.</p>
+
+    </main>
+
+    <!-- footer -->
+    <footer class="site-footer">
+  <div class="footer-inner">
+
+    <div class="footer-left">
+      <div class="footer-name">Zeyu Yan</div>
+      <div class="footer-affiliation">University of Maryland</div>
+
+      <div class="footer-gap"></div>
+
+      <div class="footer-address">
+        0102 IRB Center<br>
+        8125 Paint Branch Dr., College Park, MD, USA
+      </div>
+    </div>
+
+    <div class="footer-right">
+      <div class="footer-powered">
+        Powered by 
+        <a href="https://jekyllrb.com" target="_blank" rel="noopener noreferrer">
+          Jekyll
+        </a>
+      </div>
+
+      <div class="footer-copyright">
+        © 2025 Zeyu Yan | All rights reserved.
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+<script>
+function toggleNews() {
+  const hidden = document.getElementById('news-hidden');
+  const button = document.querySelector('.news-toggle');
+
+  if (hidden.style.display === 'block') {
+    hidden.style.display = 'none';
+    button.textContent = 'Show more ▼';
+  } else {
+    hidden.style.display = 'block';
+    button.textContent = 'Show less ▲';
+  }
+}
+</script>
+    <a href="#top" class="float-back-btn" title="Back to top">↑</a>
+  </body>
+</html>

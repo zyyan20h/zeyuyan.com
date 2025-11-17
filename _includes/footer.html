@@ -1,0 +1,45 @@
+<footer class="site-footer">
+  <div class="footer-inner">
+
+    <div class="footer-left">
+      <div class="footer-name">Zeyu Yan</div>
+      <div class="footer-affiliation">University of Maryland</div>
+
+      <div class="footer-gap"></div>
+
+      <div class="footer-address">
+        0102 IRB Center<br>
+        8125 Paint Branch Dr., College Park, MD, USA
+      </div>
+    </div>
+
+    <div class="footer-right">
+      <div class="footer-powered">
+        Powered by 
+        <a href="https://jekyllrb.com" target="_blank" rel="noopener noreferrer">
+          Jekyll
+        </a>
+      </div>
+
+      <div class="footer-copyright">
+        © {{ "now" | date: "%Y" }} Zeyu Yan | All rights reserved.
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+<script>
+function toggleNews() {
+  const hidden = document.getElementById('news-hidden');
+  const button = document.querySelector('.news-toggle');
+
+  if (hidden.style.display === 'block') {
+    hidden.style.display = 'none';
+    button.textContent = 'Show more ▼';
+  } else {
+    hidden.style.display = 'block';
+    button.textContent = 'Show less ▲';
+  }
+}
+</script>

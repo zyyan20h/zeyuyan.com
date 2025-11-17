@@ -1,0 +1,19 @@
+- type: award
+  date: 2025-10-01
+  text: "UIST 2025 paper received Best Paper award."
+  link:
+  link_label:
+
+- type: paper
+  date: 2025-08-20
+  text: "New paper on reprogrammable matter accepted to UIST 2025."
+  link: "https://uist.acm.org"    # optional
+  link_label: "UIST"
+
+- type: travel
+  date: 2025-07-01
+  text: "Invited talk at Georgia Tech on sustainable hardware and repairable devices."
+  link:
+  link_label:
+
+

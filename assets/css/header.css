@@ -1,0 +1,35 @@
+/* -------------------------
+   HEADER
+   Simple top navigation
+   ------------------------- */
+
+/* Header strip across the top */
+.site-header {
+    width: 100%;
+    padding: 0.75rem 0;       /* some space above and below the nav */
+    margin-bottom: 1rem;      /* space between header and main content */
+    background: #080808;
+    border-bottom: 1px solid #d4d4d4; 
+}
+
+/* Inner nav aligned with page width */
+.site-nav {
+    max-width: 960px;         /* match page-content width */
+    margin: 0 auto;           /* center the nav block */
+    padding: 0 1.5rem;        /* line up with page-content padding */
+    display: flex;            /* lay out links in a row */
+    gap: 1.25rem;             /* space between links */
+    align-items: center;      /* vertical alignment for future items */
+}
+
+/* Individual nav links */
+.nav-link {
+    font-size: 0.95rem;
+    color: #f2f2f2;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #e6dfc8;
+    text-decoration: underline;
+}

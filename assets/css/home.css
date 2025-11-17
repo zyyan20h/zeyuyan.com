@@ -1,0 +1,362 @@
+
+
+/* -------------------------
+   HOME PAGE
+   Top section layout with float
+   ------------------------- */
+
+/* Outer wrapper */
+.home-top {
+    margin-bottom: 1rem;    
+}
+
+/* Sidebar: avatar + icons + name + title + affiliation */
+.home-sidebar {
+    float: right;
+    width: 480px;              /* adjust as you like */
+    margin-left: 1rem;        /* gap between sidebar and text */
+
+    display: flex;             /* avatar + text side by side */
+    align-items: flex-start;
+    gap: 1rem;              /* space between avatar and name/title block */
+    margin-bottom: 0;
+}
+
+/* Inside sidebar blocks */
+.home-top-left,
+.home-top-middle {
+  margin: 0;
+}
+
+/* Avatar */
+.home-avatar {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #ccc;
+  /* margin-bottom: 0.5rem; */
+}
+
+/* -------------------------
+   ICONS USING EXTERNAL SVG FILES
+   ------------------------- */
+
+.home-icons {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.icon-link {
+  display: flex;
+  text-decoration: none;
+}
+
+.icon-img {
+  width: 22px;
+  height: 22px;
+  display: block;
+  filter: brightness(0%);
+  transition: filter 0.2s ease;
+}
+
+.icon-link:hover .icon-img {
+  filter: invert(80%) sepia(20%) saturate(200%) hue-rotate(10deg) brightness(95%);
+}
+
+/* -------------------------
+   Name, title, affiliation
+   ------------------------- */
+
+.home-name {
+    margin-top: 0;
+    margin-bottom: 0.9rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.home-affiliation {
+    /* margin-top: 0.9rem; */
+    margin: 0 0 0 0;
+    font-size: 0.8rem;
+    opacity: 0.9;
+}
+
+.home-title {
+    margin-top: 0;
+    margin-bottom: 0.9rem;
+    /* margin: 0 0 0 0; */
+    font-size: 0.8rem;
+    opacity: 0.9;
+}
+
+
+
+/* -------------------------
+   Main text: wraps around sidebar
+   ------------------------- */
+
+.home-text {
+    margin: 0;
+    font-size: 0.95rem;
+    /* text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto; */
+}
+
+.home-text-extended {
+    margin: 0 0 0 0;
+    grid-column: 1 / -1;
+}
+
+.home-top::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.home-annoucement {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #222;
+}
+
+/* .home-text p {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+} */
+
+/* -------------------------
+   Responsive: stack on small screens
+   ------------------------- */
+
+@media (max-width: 900px) {
+  .home-sidebar {
+    float: none;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 1.5rem;
+
+    flex-direction: column;  /* stack avatar above name on small screens */
+    align-items: flex-start;
+  }
+
+  .home-text {
+    overflow: visible;
+  }
+
+  .home-icons {
+    margin-top: 0.5rem;
+  }
+}
+
+
+/* -------------------------
+   NEWS: New One-Line Layout
+   ------------------------- */
+
+/* Divider above and below the news section */
+.home-news {
+  padding: 0 0;
+  border-top: 1px solid #d3cfc7;
+  border-bottom: 1px solid #d3cfc7;   /* same subtle line */
+}
+
+.news-item {
+  display: grid;
+  grid-template-columns: 100px 20px 24px 1fr;
+  /*   date   |   sep   icon   text   */
+  align-items: center;
+  column-gap: 0.5rem;
+  margin-bottom: 0.4rem;
+}
+
+.news-date {
+  font-weight: 600;
+  opacity: 0.85;
+  white-space: nowrap;
+}
+
+.news-sep {
+  text-align: center;
+  opacity: 0.6;
+}
+
+.news-icon-img {
+  width: 18px;
+  height: 18px;
+}
+
+.news-text a {
+  /* color: #d3b685; */
+  text-decoration: none;
+}
+
+.news-text a:hover {
+  text-decoration: underline;
+}
+
+/* Keep lists clean */
+.news-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.news-hidden {
+  display: none;
+  margin-top: 0.5rem;
+}
+
+/* Toggle button under news section */
+.news-toggle {
+  background: none;               /* no button background */
+  border: none;                   /* remove outline */
+  color: #d3cfc7;                 /* your beige accent */
+  font-size: 0.9rem;
+  cursor: pointer;
+  padding: 0.25rem 0;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  text-align: left;               /* aligns with news column */
+}
+
+.news-toggle:hover {
+  text-decoration: underline;
+}
+
+/* Keep hidden news block hidden by default */
+.news-hidden {
+  display: none;
+  margin-top: 0.5rem;
+}
+
+/* -------------------------------------
+   PUBLICATION SECTION
+-------------------------------------- */
+
+.home-publications {
+  margin-top: 0.25rem;
+  padding: 2rem 0;
+  /* border-top: 1px solid #2a2a2a;
+  border-bottom: 1px solid #2a2a2a; */
+}
+
+/* Section header */
+.pub-title-section {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+/* Main layout */
+.pub-item {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+  align-items: start;
+}
+
+/* Publication image */
+.pub-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  background: #f2f2f2;
+}
+
+/* Venue + award */
+/* Venue + inline award */
+.pub-venue {
+  font-size: 0.95rem;
+  opacity: 0.9;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+/* Award text & icon color */
+.pub-award {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: #db592e;  /* your chosen orange */
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+/* Force SVG icon to match award color */
+.pub-award-icon {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  filter: brightness(0) saturate(100%) invert(46%) sepia(84%) saturate(2912%) hue-rotate(349deg) brightness(91%) contrast(99%);
+}
+
+/* Title */
+.pub-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 0.25rem 0 0.35rem 0;
+}
+
+/* Authors */
+.pub-authors {
+  font-size: 0.9rem;
+  opacity: 0.85;
+  margin-bottom: 0.5rem;
+}
+
+/* Buttons */
+.pub-buttons {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+/* Default + visited */
+.pub-btn:link,
+.pub-btn:visited {
+  background: #1f1f1f;
+  border: 1px solid #444;
+  color: #d3cfc7;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* Hover */
+.pub-btn:hover {
+  border-color: #d3cfc7;
+  text-decoration: none;
+}
+
+/* Active (mouse down) */
+.pub-btn:active {
+  color: #d3cfc7;
+  border-color: #d3cfc7;
+}
+
+.pub-image {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;  /* 16:9 aspect ratio */
+  overflow: hidden;
+  border-radius: 10;
+  background: #f2f2f2;
+}
+
+.pub-image img {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* ensures proper cropping */
+}

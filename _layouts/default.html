@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include head.html %}
+  <body id="top">
+    <!-- header -->
+    
+    {% comment %}
+    {% include header.html %}
+    {% endcomment %}
+
+    <!-- content -->
+    <main class="page-content">
+      {{ content }}
+    </main>
+
+    <!-- footer -->
+    {% include footer.html %}
+    {% include float-back.html %}
+  </body>
+</html>

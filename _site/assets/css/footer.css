@@ -1,0 +1,95 @@
+/* -------------------------
+   FOOTER
+   ------------------------- */
+
+.site-footer {
+  width: 100%;
+  background: #080808;              /* dark footer */
+  color: #f2f2f2;
+  padding: 1.5rem 0;
+  margin-top: 2rem;
+  border-top: 1px solid #333;
+}
+
+/* Use CSS Grid: left column (top), right column (bottom) */
+.footer-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;  /* left grows, right shrinks */
+  column-gap: 2rem;
+
+  font-size: 0.85rem;
+  font-family: "SF Mono", "JetBrains Mono", "Menlo", "Consolas", monospace;
+}
+
+/* LEFT COLUMN – top aligned by default */
+.footer-left {
+  text-align: left;
+  line-height: 1.35;
+  opacity: 0.9;
+  align-self: start;                /* explicitly pin to top */
+}
+
+.footer-name {
+  font-weight: 600;
+}
+
+.footer-affiliation {
+  opacity: 0.85;
+}
+
+.footer-gap {
+  height: 0.7rem;
+}
+
+.footer-address {
+  opacity: 0.85;
+}
+
+/* RIGHT COLUMN – bottom aligned */
+.footer-right {
+  text-align: right;
+  align-self: end;                  /* pin this column to the bottom */
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  opacity: 0.85;
+  white-space: nowrap;
+}
+
+.footer-powered {
+  font-size: 0.8rem;
+}
+
+.footer-copyright {
+  font-size: 0.75rem;
+  opacity: 0.75;
+}
+
+/* Links */
+.site-footer a {
+  color: #e6dfc8;                 /* beige accent */
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+  opacity: 1;
+}
+
+/* Mobile: stack them */
+@media (max-width: 650px) {
+  .footer-inner {
+    grid-template-columns: 1fr;
+    row-gap: 0.75rem;
+  }
+
+  .footer-right {
+    align-items: flex-start;
+    text-align: left;
+    white-space: normal;
+  }
+}

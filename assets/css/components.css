@@ -1,0 +1,23 @@
+/* -------------------------
+   Floating Back to Top Button
+   ------------------------- */
+
+.float-back-btn {
+  position: fixed;
+  bottom: 1.75rem;
+  right: 1.75rem;
+  z-index: 999;
+
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+
+  background: #d3cfc7;           /* TEMP: make it impossible to miss */
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 1.5rem;
+  text-decoration: none;
+}
