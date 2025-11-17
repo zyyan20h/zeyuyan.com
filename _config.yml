@@ -1,7 +1,18 @@
+# title: "Zeyu Yan"
+# description: "Ph.D. Candidate in Computer Science, University of Maryland"
+# baseurl: ""
+# url: "https://zyyan20h.github.io"
+# markdown: kramdown
+# theme: null
+# exclude:
+#   - README.md
+
 title: "Zeyu Yan"
 description: "Ph.D. Candidate in Computer Science, University of Maryland"
-baseurl: ""
-url: "https://zyyan20h.github.io"
+
+url: "https://zyyan20h.github.io"   # your GitHub Pages host
+baseurl: "/zeyuyan.com"             # repo name, with leading slash
+
 markdown: kramdown
 theme: null
 exclude:
