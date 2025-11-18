@@ -379,3 +379,22 @@
   height: auto;
   object-fit: cover;     /* fill the box while preserving aspect ratio */
 }
+
+/* Responsive layout for publication items */
+/* Mobile layout for publications */
+@media (max-width: 900px) {
+  .pub-item {
+    grid-template-columns: 1fr !important;    /* force 1-column layout */
+    grid-template-rows: auto auto;
+  }
+
+  .pub-image {
+    width: 100%;              /* full width image */
+    max-width: none;
+    margin-top: 1rem;      /* spacing between image + text */
+  }
+
+  .pub-right {
+    padding-left: 0;          /* remove left offset */
+  }
+}
