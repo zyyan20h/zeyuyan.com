@@ -379,3 +379,21 @@
   height: auto;
   object-fit: cover;     /* fill the box while preserving aspect ratio */
 }
+
+/* Responsive layout for publication items */
+@media (max-width: 700px) {
+  .pub-item {
+    flex-direction: column;     /* stack image above info */
+    align-items: flex-start;     /* make it left-aligned */
+  }
+
+  .pub-image {
+    width: 100%;                /* full width */
+    height: auto;               /* maintain aspect ratio */
+    margin-bottom: 0.75rem;     /* spacing below image */
+  }
+
+  .pub-info {
+    width: 100%;                /* allow text to use full width */
+  }
+}
