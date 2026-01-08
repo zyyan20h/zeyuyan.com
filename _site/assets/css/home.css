@@ -1,3 +1,45 @@
+/* -------------------------
+   HOME INTRO FULL-WIDTH BAND
+   ------------------------- */
+
+.home-intro-band {
+  /* full-bleed background even inside a centered container */
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+
+  background: rgba(138, 137, 132, 0.08);
+
+  /* remove the gap under the header */
+  margin-top: -2.5rem;   
+  margin-bottom: 2.5rem;
+}
+
+.home-intro-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2.5rem 2.5rem;
+
+  text-align: center;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+               "Liberation Mono", monospace;
+
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.home-intro-inner p {
+  margin: 0 0 2rem 0;
+}
+
+.home-intro-inner p:last-child {
+  margin-bottom: 0;
+}
+
+.home-intro-links a {
+  font-weight: 500;
+}
+
 
 
 /* -------------------------

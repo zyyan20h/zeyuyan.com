@@ -3,6 +3,26 @@ layout: default
 title: "Zeyu Yan"
 ---
 
+<section class="home-intro-band">
+  <div class="home-intro-inner">
+    <p>
+      I study how physical objects can be reprogrammed to be as adaptable as digital information.<br>
+      My research explores how interactive systems can be created so that they are easy to make, modify, and repurpose on demand.
+    </p>
+
+    <p>
+      This work brings together computing, engineering, and design, with a focus on sustainable, accessible, and enabling technology. I develop new fabrication methods and interactive systems that lower barriers to creating physical artifacts and support more inclusive and responsible ways of building technology.
+    </p>
+
+    <p class="home-intro-links">
+      You can explore my work through my <a href="#publications">publications</a>,
+      see recent <a href="#news">news and activities</a>,
+      or learn more about my <a href="/teaching/">teaching and outreach</a>.
+    </p>
+  </div>
+</section>
+
+
 
 <section class="home-top">
   <div class="home-sidebar">
