@@ -1,35 +1,66 @@
-/* -------------------------
-   HEADER
-   Simple top navigation
-   ------------------------- */
 
-/* Header strip across the top */
 .site-header {
-    width: 100%;
-    padding: 0.75rem 0;       /* some space above and below the nav */
-    margin-bottom: 1rem;      /* space between header and main content */
-    background: #080808;
-    border-bottom: 1px solid #d4d4d4; 
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  width: 100%;
+  height: 52px;
+  padding: 0;              /* key change */
+  margin-bottom: 1.25rem;
+  background: #080808;
+  border-bottom: none;
 }
 
-/* Inner nav aligned with page width */
 .site-nav {
-    max-width: 960px;         /* match page-content width */
-    margin: 0 auto;           /* center the nav block */
-    padding: 0 1.5rem;        /* line up with page-content padding */
-    display: flex;            /* lay out links in a row */
-    gap: 1.25rem;             /* space between links */
-    align-items: center;      /* vertical alignment for future items */
+    height: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+
+    display: flex;
+    align-items: stretch; /* IMPORTANT */
+    gap: 0.5rem;
 }
 
-/* Individual nav links */
-.nav-link {
-    font-size: 0.95rem;
-    color: #f2f2f2;
-    text-decoration: none;
+/* Links */
+.nav-link,
+.nav-link:visited {
+  display: flex;
+  align-items: center;
+
+  height: 100%;
+  padding: 0 0.75rem;
+
+  font-size: 0.95rem;
+  font-weight: 400;
+
+  color: rgba(242, 242, 242, 0.9);
+  text-decoration: none;
+
+  transition: background-color 0.15s ease, color 0.15s ease;
 }
 
 .nav-link:hover {
-    color: #e6dfc8;
-    text-decoration: underline;
+  background-color: #d3cfc7; /* beige */
+  color: #080808;            /* dark text */
+  text-decoration: none;
+}
+
+/* Optional: active state (we will wire it up next step) */
+.nav-link.is-active {
+  color: #d3cfc7;
+}
+
+/* a subtle underline accent for active */
+.nav-link.is-active::after {
+  content: "";
+  position: absolute;
+  left: 0.25rem;
+  right: 0.25rem;
+  bottom: 0.1rem;
+  height: 2px;
+  background: rgba(211, 207, 199, 0.7);
+  border-radius: 2px;
+  position: relative;
 }
