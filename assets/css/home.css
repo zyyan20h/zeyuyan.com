@@ -1,73 +1,108 @@
 /* -------------------------
-   HOME INTRO FULL-WIDTH BAND
+   HOME HERO (intro left, profile right)
    ------------------------- */
-
-.home-intro-band {
-  /* full-bleed background even inside a centered container */
+.home-hero-band {
   width: 100vw;
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
 
-  background: rgba(138, 137, 132, 0.08);
-
-  /* remove the gap under the header */
-  margin-top: -2.5rem;   
-  margin-bottom: 2.5rem;
+  background: rgba(118, 115, 111, 0.08); /* subtle contrast */
+  border-bottom: none;
 }
 
-.home-intro-inner {
+
+.home-hero {
   max-width: 960px;
   margin: 0 auto;
-  padding: 2.5rem 2.5rem;
+  padding: 2.25rem 0 2.5rem 0;
+  display: grid;
+  grid-template-columns: 1.55fr 0.8fr;
+  gap: 4rem;
+  align-items: start;
 
-  text-align: center;
+}
+
+/* Left: intro statement */
+.home-hero-left {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
                "Liberation Mono", monospace;
+  text-align: center;
+}
 
-  font-size: 1rem;
+.home-hero-lead {
+  margin: 0 0 1.5rem 0;
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+.home-hero-sub {
+  margin: 0 0 0.9rem 0;
+  font-size: 0.95rem;
   line-height: 1.6;
+  opacity: 0.92;
 }
 
-.home-intro-inner p {
-  margin: 0 0 2rem 0;
-}
-
-.home-intro-inner p:last-child {
-  margin-bottom: 0;
-}
-
-.home-intro-links a {
-  font-weight: 500;
-}
-
-
-
-/* -------------------------
-   HOME PAGE
-   Top section layout with float
-   ------------------------- */
-
-/* Outer wrapper */
-.home-top {
-    margin-bottom: 1rem;    
-}
-
-/* Sidebar: avatar + icons + name + title + affiliation */
-.home-sidebar {
-    float: right;
-    width: 480px;              /* adjust as you like */
-    margin-left: 1rem;        /* gap between sidebar and text */
-
-    display: flex;             /* avatar + text side by side */
-    align-items: flex-start;
-    gap: 1rem;              /* space between avatar and name/title block */
-    margin-bottom: 0;
-}
-
-/* Inside sidebar blocks */
-.home-top-left,
-.home-top-middle {
+.home-hero-links {
   margin: 0;
+  font-size: 0.95rem;
+}
+
+.home-hero-links a {
+  font-weight: 600;
+}
+
+/* Right: identity block */
+.home-hero-right {
+  text-align: left;
+}
+
+.home-hero-right .home-avatar {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #ccc;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.home-hero-right .home-name {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.home-hero-right .home-affiliation {
+  margin: 0 0 0.35rem 0;
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+.home-hero-right .home-title {
+  margin: 0 0 0.8rem 0;
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+/* Icons (reuse your existing icon styles if present) */
+.home-hero-right .home-icons {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+/* Responsive: stack on small screens */
+@media (max-width: 900px) {
+  .home-hero {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+  .home-hero-right .home-avatar {
+    width: 120px;
+    height: 120px;
+  }
 }
 
 /* Avatar */
