@@ -15,11 +15,14 @@ title: "Zeyu Yan"
 
     <div class="home-top-middle">
       <h1 class="home-name">Zeyu Yan  燕泽宇</h1>
+      <p class="home-title">
+        HCI Ph.D. Candidate
+      </p>
       <p class="home-affiliation">
         Computer Science, University of Maryland
       </p>
       <p class="home-title">
-        HCI Ph.D. Candidate｜Maker | Car Enthusiast
+        Maker | Car Enthusiast ｜ climber
       </p>
       
 

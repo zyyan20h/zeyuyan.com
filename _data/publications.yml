@@ -1,6 +1,6 @@
 - year: 2025
   venue: UIST 2025
-  award: "Best Paper Award & Special Recognition for Sustainability in Demo"
+  award: "Best Paper Award ｜ Special Recognition for Sustainability in Demo"
   title: "DissolvPCB: Fully Recyclable 3D-Printed Electronics Using Liquid Metal Conductors and PVA Substrates"
   authors: "Zeyu Yan, Su Hwan Hong, Josiah Hester, Tingyu Cheng, Huaishu Peng"
   image: "/assets/img/pubs/dissolvpcb.png"
@@ -88,7 +88,7 @@
 
 - year: 2023
   venue: UIST 2023
-  # award: ""
+  award: "3DPC Pioneer of the Decade Finalist"
   title: "3D Printing Magnetophoretic Displays"
   authors: "Zeyu Yan, Hsuanling Lee, Liang He, Huaishu Peng"
   image: "/assets/img/pubs/magnetophoretic.png"
