@@ -6,11 +6,12 @@
 /* Main page container */
 .page-content {
   max-width: 960px;     /* limit line length, good for reading */
-  margin: 2.5rem auto;  /* top/bottom margin, auto left/right centers it */
+  margin: 0 auto;  /* top/bottom margin, auto left/right centers it */
   padding: 0 1.5rem;    /* left/right padding so text does not touch edges */
   background: #f2f2f2;  /* white content area on top of grey body */
   border-radius: 0;  /* slightly rounded corners */
   box-shadow: none; /* soft shadow */
+  flex: 1;
 }
 
 /* On small screens, let it breathe less and go edge to edge */
@@ -20,4 +21,8 @@
     border-radius: 0;
     box-shadow: none;
   }
+}
+
+html {
+  scrollbar-gutter: stable;
 }

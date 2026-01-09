@@ -17,7 +17,7 @@ title: "Zeyu Yan"
 
       <p class="home-hero-links">
         Explore my <a href="#publications">publications</a>,
-        or learn <a href="/about/">about me</a>.
+        or learn more <a href="/about/">about me</a>.
       </p>
     </div>
 
@@ -57,36 +57,29 @@ title: "Zeyu Yan"
         </a>
       </div>
     </div>
+    <p class="home-announcement">
+        📣 I am actively seeking academic positions in HCI and related fields.
+    </p>
   </section>
 </section>
 
-<!-- <section class="home-news">
+<section class="home-news" id="news">
   <h2 class="news-title">News</h2>
 
-  <ul class="news-list" id="news-visible">
+  <ul class="news-list">
     {% assign visible_limit = 4 %}
-    {% for item in site.data.news %}
-      {% if forloop.index <= visible_limit %}
-        {% include news-item.html item=item %}
-      {% endif %}
+    {% for item in site.data.news limit: visible_limit %}
+      {% include news-item.html item=item %}
     {% endfor %}
   </ul>
 
-  <div class="news-hidden" id="news-hidden">
-    <ul class="news-list">
-      {% for item in site.data.news %}
-        {% if forloop.index > visible_limit %}
-          {% include news-item.html item=item %}
-        {% endif %}
-      {% endfor %}
-    </ul>
-  </div>
-
-  <button class="news-toggle" type="button" onclick="toggleNews()">Show more ▼</button>
-</section> -->
+  <p class="news-more">
+    <a href="/news/">More news →</a>
+  </p>
+</section>
 
 
-<section class="home-publications">
+<section class="home-publications" id="publications">
   <h2 class="pub-title-section">Publications</h2>
 
   {% for pub in site.data.publications %}
