@@ -1,69 +1,74 @@
-html, body {
-    margin: 0;               /* remove browser default margin */
-    padding: 0;  
-
-    font-family: "Inter", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.6;
-    color: #222;
-    background: #f2f2f2;
-}
+/* =========================
+   BASE / RESET
+   ========================= */
 
 html, body {
   margin: 0;
   padding: 0;
-  width: 100%;
-  height: 100%;
+
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+
+  color: #222;
+  background: #f2f2f2;
 }
 
+/* =========================
+   PAGE LAYOUT
+   ========================= */
+
 body {
-  overflow-x: hidden; /* you already confirmed this helped */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
-img, svg {
-  max-width: 100%;
-  height: auto;
-}
-
-/* -------------------------
-   GLOBAL LINK STYLES
-   ------------------------- */
-
-a {
-  color: #222;            /* normal link color */
-  text-decoration: none;     /* remove underline */
-  transition: color 0.15s ease;
-  text-decoration: underline;
-}
-
-a:hover {
-  color: #bbb5a2;            /* beige hover */
-  text-decoration: underline;
-}
-
-a:visited {
-  color: #222;            /* visited color (purple-ish, edit as needed) */
-}
-/* 
-a:active {
-  color: #b08c60;         
-} */
-
-
-/* Prevent header and footer from shrinking in the flex layout */
+/* Header and footer should never shrink */
 .site-header,
 .site-footer {
   flex: 0 0 auto;
 }
 
-/* Make the content area take the remaining height */
-main,
-.page-content {
+/* Main content fills remaining height */
+.page-content,
+main {
   flex: 1 0 auto;
 }
+
+/* =========================
+   MEDIA / ELEMENTS
+   ========================= */
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* =========================
+   GLOBAL LINKS
+   ========================= */
+
+a {
+  color: #222;
+  text-decoration: underline;
+  transition: color 0.15s ease;
+}
+
+a:hover {
+  color: #bbb5a2;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #222;
+}
+
+/* =========================
+   404 PAGE
+   ========================= */
 
 .not-found {
   max-width: 640px;

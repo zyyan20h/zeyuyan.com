@@ -98,12 +98,12 @@
   .home-hero {
     grid-template-columns: 1fr;
     gap: 1.5rem;
-    margin-top: 1.5rem;
+    margin-top: 0.3rem 0rem;
   }
 
-  .home-hero-right .home-avatar {
-    width: 120px;
-    height: 120px;
+  .home-hero-right {
+
+    display: none;
   }
 }
 

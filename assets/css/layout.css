@@ -7,7 +7,7 @@
 .page-content {
   max-width: 960px;     /* limit line length, good for reading */
   margin: 0 auto;  /* top/bottom margin, auto left/right centers it */
-  padding: 0 1.5rem;    /* left/right padding so text does not touch edges */
+  padding: 0 0rem;    /* left/right padding so text does not touch edges */
   background: #f2f2f2;  /* white content area on top of grey body */
   border-radius: 0;  /* slightly rounded corners */
   box-shadow: none; /* soft shadow */
@@ -19,6 +19,7 @@
   .page-content {
     margin: 0;
     border-radius: 0;
+    padding: 0;
     box-shadow: none;
   }
 }
