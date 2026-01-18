@@ -17,3 +17,8 @@ markdown: kramdown
 theme: null
 exclude:
   - README.md
+
+collections:
+  pages:
+    output: true
+    permalink: /:name/

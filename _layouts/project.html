@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include head.html %}
+  <body id="top">
+    <!-- header -->
+    
+    {% include header.html %}
+
+    <!-- content -->
+    <main class="page-content">
+      {{ content }}
+    </main>
+
+    <!-- footer -->
+    {% include footer.html %}
+    {% include float-back.html %}
+  </body>
+</html>
+
+
+<script>
+  function closeMenu() {
+    const menu = document.getElementById("site-menu");
+    const btn = document.querySelector(".nav-toggle");
+    if (!menu || !btn) return;
+
+    menu.classList.remove("is-open");
+    btn.setAttribute("aria-expanded", "false");
+  }
+
+  function toggleMenu() {
+    const menu = document.getElementById("site-menu");
+    const btn = document.querySelector(".nav-toggle");
+    if (!menu || !btn) return;
+
+    const isOpen = menu.classList.toggle("is-open");
+    btn.setAttribute("aria-expanded", isOpen ? "true" : "false");
+  }
+
+  document.addEventListener("click", (e) => {
+    const menu = document.getElementById("site-menu");
+    const btn = document.querySelector(".nav-toggle");
+    if (!menu || !btn) return;
+
+    const clickedToggle = btn.contains(e.target);
+    const clickedInsideMenu = menu.contains(e.target);
+
+    if (!clickedToggle && !clickedInsideMenu) closeMenu();
+  });
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const menu = document.getElementById("site-menu");
+    if (!menu) return;
+
+    // Close menu when any link inside it is clicked (including anchors)
+    menu.querySelectorAll("a").forEach((a) => {
+      a.addEventListener("click", () => closeMenu());
+    });
+  });
+</script>

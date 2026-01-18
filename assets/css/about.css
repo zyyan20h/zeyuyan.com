@@ -1,0 +1,241 @@
+/* -------------------------
+   HOME HERO (intro left, profile right)
+   ------------------------- */
+.about-hero-band {
+  width: 960px;
+  /* margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw); */
+  margin-top: 0;
+  margin-bottom: 0;
+
+  background: transparent;
+  border-bottom: none;
+}
+
+
+.about-hero {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 3rem 0 0 0;
+  display: grid;
+  grid-template-columns: 1.55fr 0.8fr;
+  gap: 0.5rem 4rem;
+  align-items: start;
+
+}
+
+/* Left: intro statement */
+.about-hero-left {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+  text-align: left;
+}
+
+
+.about-hero-links {
+  margin: 0 0 1rem 0;
+  font-size: 0.95rem;
+}
+
+.about-hero-links a {
+  font-weight: 600;
+  color: #A58F73;
+}
+
+/* Right: identity block */
+.about-hero-right {
+  text-align: left;
+}
+
+.about-hero-right .about-avatar {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #ccc;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.about-hero-right .about-name {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.about-hero-right .about-affiliation {
+  margin: 0 0 0.35rem 0;
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+.about-hero-right .about-title {
+  margin: 0 0 0.8rem 0;
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+/* Icons (reuse your existing icon styles if present) */
+.about-hero-right .about-icons {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+/* Responsive: stack on small screens */
+@media (max-width: 900px) {
+  .about-hero {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 0.3rem 0rem;
+  }
+
+  .about-hero-right {
+
+    display: none;
+  }
+}
+
+/* Avatar */
+.about-avatar {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #ccc;
+  /* margin-bottom: 0.5rem; */
+}
+
+/* -------------------------
+   ICONS USING EXTERNAL SVG FILES
+   ------------------------- */
+
+.about-icons {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.icon-link {
+  display: flex;
+  text-decoration: none;
+}
+
+.icon-img {
+  width: 22px;
+  height: 22px;
+  display: block;
+  filter: brightness(0%);
+  transition: filter 0.2s ease;
+}
+
+.icon-link:hover .icon-img {
+  filter: invert(80%) sepia(20%) saturate(200%) hue-rotate(10deg) brightness(95%);
+}
+
+/* -------------------------
+   Name, title, affiliation
+   ------------------------- */
+
+.about-name {
+    margin-top: 0;
+    margin-bottom: 0.9rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.about-affiliation {
+    /* margin-top: 0.9rem; */
+    margin: 0 0 0 0;
+    font-size: 0.8rem;
+    opacity: 0.9;
+}
+
+.about-title {
+    margin-top: 0;
+    margin-bottom: 0rem;
+    /* margin: 0 0 0 0; */
+    font-size: 0.8rem;
+    opacity: 0.9;
+}
+
+.about-announcement {
+    margin-top: 2rem;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+    text-align: left;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #222;
+}
+
+
+/* -------------------------
+   Main text: wraps around sidebar
+   ------------------------- */
+
+.about-text {
+    margin: 0;
+    font-size: 0.95rem;
+    /* text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto; */
+}
+
+.about-text-extended {
+    margin: 0 0 0 0;
+    grid-column: 1 / -1;
+}
+
+.about-top::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.about-body {
+    margin-top: 0;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+    text-align: left;
+    font-size: 0.95rem;
+    /* font-weight: 500; */
+    color: #222;
+}
+
+.about-body-bold {
+    font-weight: 600;
+    color: #A58F73;
+}
+
+.about-body a{
+    font-weight: 600;
+    color: #A58F73;
+}
+
+/* .about-text p {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+} */
+
+/* -------------------------
+   Responsive: stack on small screens
+   ------------------------- */
+
+@media (max-width: 900px) {
+  .about-sidebar {
+    float: none;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 1.5rem;
+
+    flex-direction: column;  /* stack avatar above name on small screens */
+    align-items: flex-start;
+  }
+
+  .about-text {
+    overflow: visible;
+  }
+
+  .about-icons {
+    margin-top: 0.5rem;
+  }
+}
