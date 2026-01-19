@@ -6,6 +6,7 @@ title: "Zeyu Yan"
   <div class="hero-bg">
     <img src="/assets/img/web-front.jpg" alt="">
     <img src="/assets/img/web-front.jpg" alt="">
+    <img src="/assets/img/web-front.jpg" alt="">
   </div>
   <section class="home-hero">
     <div class="home-hero-left">
@@ -70,16 +71,16 @@ title: "Zeyu Yan"
 </section>
 
 <section class="home-news" id="news">
-  <h2 class="news-title">News</h2>
+  <h2 class="home-news-title">News</h2>
 
-  <ul class="news-list">
-    {% assign visible_limit = 4 %}
+  <ul class="home-news-list">
+    {% assign visible_limit = 6 %}
     {% for item in site.data.news limit: visible_limit %}
       {% include news-item.html item=item %}
     {% endfor %}
   </ul>
 
-  <p class="news-more">
+  <p class="home-news-more">
     <a href="/news/">More news →</a>
   </p>
 </section>
@@ -93,32 +94,51 @@ title: "Zeyu Yan"
   {% endfor %}
 </section>
 
+
 <script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const bg = document.querySelector(".hero-bg");
-    const imgs = bg.querySelectorAll("img");
+document.addEventListener("DOMContentLoaded", () => {
+  const bg = document.querySelector(".hero-bg");
+  const imgs = Array.from(bg.querySelectorAll("img"));
 
-    let offset = 0;
-    const speed = 0.8; // px per frame (tune this)
+  if (!bg || imgs.length === 0) return;
 
-    function animate() {
-      const imgWidth = imgs[0].getBoundingClientRect().width;
+  let offset = 0;
+  let speed = 1; // ← CHANGE THIS and it WILL change
+  let imgWidth = 0;
 
-      offset -= speed;
+  function setup() {
+    imgWidth = imgs[0].getBoundingClientRect().width;
+    const viewportWidth = window.innerWidth;
 
-      if (-offset >= imgWidth) {
-        offset += imgWidth;
-      }
-
-      bg.style.transform = `translateX(${offset}px)`;
-      requestAnimationFrame(animate);
+    // Ensure enough tiles to cover viewport + one extra
+    let totalWidth = imgs.length * imgWidth;
+    while (totalWidth < viewportWidth + imgWidth) {
+      const clone = imgs[0].cloneNode(true);
+      bg.appendChild(clone);
+      imgs.push(clone);
+      totalWidth += imgWidth;
     }
 
-    // respect reduced motion
-    if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-      animate();
+    animate();
+  }
+
+  function animate() {
+    offset -= speed;
+
+    // Wrap only when passing one full image
+    if (offset <= -imgWidth) {
+      offset += imgWidth;
     }
-  });
+
+    bg.style.transform = `translateX(${offset}px)`;
+    requestAnimationFrame(animate);
+  }
+
+  // Wait for image to load
+  if (imgs[0].complete) {
+    setup();
+  } else {
+    imgs[0].addEventListener("load", setup);
+  }
+});
 </script>
-
-include float-back.html

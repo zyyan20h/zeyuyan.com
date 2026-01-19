@@ -81,7 +81,7 @@
 }
 
 /* Mobile: stack them */
-@media (max-width: 650px) {
+@media (max-width: 700px) {
   .footer-inner {
     grid-template-columns: 1fr;
     row-gap: 0.75rem;

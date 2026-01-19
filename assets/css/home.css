@@ -1,7 +1,7 @@
 .home-hero-band {
   position: relative;
   width: 100vw;
-  height: 515px;
+  /* height: 515px; */
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
   margin-top: 0;
@@ -16,7 +16,7 @@
   position: absolute;
   inset: 0;
 
-  background: rgba(0, 0, 0, 0.8); /* adjust opacity */
+  background: rgba(0, 0, 0, 0.85); /* adjust opacity */
   z-index: 1;
   pointer-events: none;
 }
@@ -238,7 +238,7 @@
    Responsive: stack on small screens
    ------------------------- */
 
-@media (max-width: 900px) {
+@media (max-width: 700px) {
   .home-sidebar {
     float: none;
     width: 100%;
@@ -270,7 +270,7 @@
   margin-bottom: 0;
 }
 
-.news-item {
+.home-news-item {
   display: grid;
   grid-template-columns: 100px 20px 24px 1fr;
   align-items: center;
@@ -278,51 +278,51 @@
   margin-bottom: 0.4rem;
 }
 
-.news-date {
+.home-news-date {
   font-weight: 600;
   opacity: 0.85;
   white-space: nowrap;
 }
 
-.news-sep {
+.home-news-sep {
   text-align: center;
   opacity: 0.6;
 }
 
-.news-icon-img {
+.home-news-icon-img {
   width: 18px;
   height: 18px;
 }
 
-.news-text a {
+.home-news-text a {
   text-decoration: none;
 }
 
-.news-text a:hover {
+.home-news-text a:hover {
   text-decoration: underline;
 }
 
-.news-list {
+.home-news-list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
 /* More news link under the list */
-.news-more {
+.home-news-more {
   margin-top: 0.6rem;
   margin-bottom: 0;
   font-size: 0.9rem;
   text-align: left;
 }
 
-.news-more a {
+.home-news-more a {
   color: #d3cfc7;
   text-decoration: none;
   font-weight: 600;
 }
 
-.news-more a:hover {
+.home-news-more a:hover {
   text-decoration: underline;
 }
 

@@ -1,0 +1,22 @@
+<section class="news-page">
+  <h1 class="news-page-title">News</h1>
+  <ul class="news-card-list">
+    {% for item in site.data.news %}
+      <li class="news-card">
+        {% if item.image %}
+          <div class="news-card-thumb">
+            <img src="{{ item.image | relative_url }}" alt="">
+          </div>
+        {% endif %}
+        <div class="news-card-content">
+          <div class="news-card-date">
+            {{ item.date | date: "%B %d, %Y" }}
+          </div>
+          <div class="news-card-title">
+            {{ item.text | default: item.text }}
+          </div>
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+</section>

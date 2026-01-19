@@ -1,19 +1,106 @@
+- type: paper
+  date: 2026-01-17
+  text: "Two papers are conditionally accepted to CHI 26."
+  link: 
+  link_label: "CHI"
+  image: "/assets/img/news/scf26_logo.png"
+
+- type: news
+  date: 2025-12-20
+  text: "I will be co-Sponsor chair of SCF 2026 with Evgeny Stemasov."
+  link: 
+  link_label: 
+  image: "/assets/img/news/chi26.png"
+
+- type: news
+  date: 2025-11-11
+  text: "I will be program committee member of DIS 2026."
+  link: 
+  link_label: 
+  image: "/assets/img/news/dis_26.png"
+
+- type: travel
+  date: 2025-10-28
+  text: "Attended 2025 Summit on Responsible Computing, AI, and Society as session panelist."
+  link: "https://rcais.github.io/"
+  link_label:
+  image: "/assets/img/news/gt_summit_25.png"
+
 - type: award
   date: 2025-10-01
-  text: "UIST 2025 paper received Best Paper award."
-  link:
+  text: "DissolvPCB Demo received Special Recognition for Sustainability in Demos at UIST."
+  link: 
   link_label:
+  image: "/assets/img/news/uist_25_demo.png"
+
+- type: award
+  date: 2025-10-01
+  text: "DissolvPCB received Best Paper award at UIST 2025."
+  link: "https://uist.acm.org/uist2025/program/awards/"
+  link_label:
+  image: "/assets/img/news/uist_25_paperaward.png"
+
 
 - type: paper
   date: 2025-08-20
-  text: "New paper on reprogrammable matter accepted to UIST 2025."
-  link: "https://uist.acm.org"    # optional
+  text: "DissolvPCB is conditionally accepted to UIST 2025."
+  link: "https://uist.acm.org/uist2025/program/papers/"
   link_label: "UIST"
+  image: "/assets/img/news/UIST25.png"
+
 
 - type: travel
   date: 2025-07-01
-  text: "Invited talk at Georgia Tech on sustainable hardware and repairable devices."
+  text: "Invited talk at Georgia Tech on sustainable hardware and repairable devices. Hosted by Prof. Josiah Hester"
   link:
   link_label:
+  image: "/assets/img/news/kamoamoa.png"
 
+- type: award
+  date: 2025-05-29
+  text: "Received the HCIL Maryland Way Award for Reserach Excellence of 2025."
+  link:
+  link_label:
+  image: "/assets/img/news/hcil_25_award.png"
 
+- type: award
+  date: 2025-04-10
+  text: "SolderlessPCB and 3D Printed Display are selected as a finalist for the 3D Pioneer Challenge award."
+  link:
+  link_label:
+  image: "/assets/img/news/3dpo_final.png"
+
+- type: paper
+  date: 2025-04-10
+  text: "Cybernetic Marionette is conditionally accepted to DIS 2025."
+  link: 
+  link_label: 
+  image: "/assets/img/news/dis_25.png"
+
+- type: award
+  date: 2025-03-15
+  text: "PCB Renewal has received the Best Paper Honorable Mention Award at CHI 2025."
+  link:
+  link_label:
+  image: "/assets/img/news/chi_25_award.png"
+
+- type: paper
+  date: 2025-01-20
+  text: "PCBRenewal is conditionally accepted to CHI 2025."
+  link:
+  link_label:
+  image: "/assets/img/news/chi_25_paper.png"
+
+- type: paper
+  date: 2025-01-10
+  text: "One paper is conditionally accepted to IEEE VR 2025."
+  link:
+  link_label:
+  image: "/assets/img/news/vr_25.png"
+
+- type: news
+  date: 2025-01-10
+  text: "I will be co-Web chair of TEI 2026 with Anup Sathya."
+  link: 
+  link_label: 
+  image: "/assets/img/news/tei26.png"
