@@ -228,6 +228,11 @@
   text-decoration: none;
 }
 
+.home-author-bold {
+  font-weight: 600;
+  color: #000;
+}
+
 /* .home-text p {
   text-align: justify;
   text-justify: inter-word;

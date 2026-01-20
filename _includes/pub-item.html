@@ -27,7 +27,7 @@
 
         <!-- Authors -->
         <div class="pub-authors">
-            {{ pub.authors }}
+            {{ pub.authors | replace: "Zeyu Yan", "<span class='home-author-bold'>Zeyu Yan</span>" | raw }}
         </div>
 
         <!-- Buttons -->
@@ -52,7 +52,7 @@
             {% endif %}
 
             {% if has_code %}
-            <a class="pub-btn" href="{{ pub.code }}" target="_blank">Link</a>
+            <a class="pub-btn" href="{{ pub.code }}" target="_blank">Open Source</a>
             {% endif %}
 
         </div>
