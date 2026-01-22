@@ -3,14 +3,14 @@
   text: "Two papers are conditionally accepted to CHI 26."
   link: 
   link_label: "CHI"
-  image: "/assets/img/news/scf26_logo.png"
+  image: "/assets/img/news/chi26_logo.png"
 
 - type: news
   date: 2025-12-20
   text: "I will be co-Sponsor chair of SCF 2026 with Evgeny Stemasov."
   link: 
   link_label: 
-  image: "/assets/img/news/chi26.png"
+  image: "/assets/img/news/scf26.png"
 
 - type: news
   date: 2025-11-11
