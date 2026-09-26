@@ -1,6 +1,32 @@
+
+# - year: 2026
+#   venue: UIST 2026 (To appear)
+#   title: "TherMosaic: Accelerating Perceived Thermal Transitions Through Spatiotemporal Thermal Feedback"
+#   authors: "Zining Zhang, Jiasheng Li, Myungin Lee, Zeyu Yan, Jin Ryong Kim, Huaishu Peng"
+#   image: "/assets/img/pubs/thermosaic.png"
+#   pdf: "/assets/files/papers/thermosaic.pdf"
+
+- year: 2026
+  venue: CHI 2026
+  title: "Circuit2Yarn: From Planar Circuits to Electronic Yarns for Textile-Based Interactions"
+  authors: "Zhechen Zhao, Jingyi Liu, Tianhong Catherine Yu, Jiaqing Liu, Zeyu Yan, Huaishu Peng"
+  image: "/assets/img/pubs/circuit2yarn.png"
+  pdf: "/assets/files/papers/circuit2yarn.pdf"
+  doi: "https://doi.org/10.1145/3772318.3791650"
+  video: "https://www.youtube.com/watch?v=mP7No5ascSc"
+
+- year: 2026
+  venue: CHI 2026
+  title: "As Content and Layout Co-Evolve: TangibleSite for Scaffolding Blind People's Webpage Design through Multimodal Interaction"
+  authors: "Jiasheng Li, Zining Zhang, Zeyu Yan, Matthew Wong, Arnav Mittal, Ge Gao, Huaishu Peng"
+  image: "/assets/img/pubs/tangiblesite.png"
+  pdf: "/assets/files/papers/tangiblesite.pdf"
+  doi: "https://doi.org/10.1145/3772318.3791895"
+
+
 - year: 2025
   venue: UIST 2025
-  award: "Best Paper Award ｜ Special Recognition for Sustainability in Demo"
+  award: "Best Paper Award ｜ Special Recognition for Sustainability in Demo ｜ Fast Company's 2026 Innovation by Design Awards Honorable Mention"
   title: "DissolvPCB: Fully Recyclable 3D-Printed Electronics Using Liquid Metal Conductors and PVA Substrates"
   authors: "Zeyu Yan, Su Hwan Hong, Josiah Hester, Tingyu Cheng, Huaishu Peng"
   image: "/assets/img/pubs/dissolvpcb.png"

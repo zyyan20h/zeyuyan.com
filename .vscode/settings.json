@@ -1,0 +1,8 @@
+{
+    "chat.tools.terminal.autoApprove": {
+        "/^bundle exec jekyll build$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
+    }
+}

@@ -1,0 +1,5 @@
+Research statement opening
+
+I study physical intelligence and fabrication: Embodiment of digital intelligence, and the fabrication of them for customizability, reconfigurability, and sustainability.
+This research investigate embodiment of intelligent physical systems that enables better pervecing in XR environment, access of technology despite disability, provocate thinking of human relationship with technology providing intuition to abstract knowledge and concepts.
+This research also investigate how the materialization process of the physical systems can be manufactured locally using small scale low entry barier fabrication technology with embedded reprogrammability towards different appearance, form factor, and functionality.

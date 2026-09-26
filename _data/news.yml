@@ -1,3 +1,56 @@
+- type: news
+  date: 2026-10-01
+  text: "I will join Georgia Tech as a postdoctoral researcher, working with Dr. Josiah Hester and Dr. Omer Inan in a position jointly hired by the School of Interactive Computing (IC) and the School of Electrical and Computer Engineering (ECE)."
+  highlight: true
+  link:
+  link_label:
+  image: "/assets/img/news/tech.jpg"
+
+- type: news
+  date: 2026-10-01
+  text: "I will also join the Ulu Lāhui Foundation as a research consultant, developing computer science education course materials for local high school students."
+  highlight: true
+  link:
+  link_label: 
+  image: "/assets/img/news/foundation.png"
+
+- type: award
+  date: 2026-09-14
+  text: "DissolvPCB received an Honorable Mention in Fast Company's Student category."
+  highlight: true
+  link: 
+  link_label:
+  image: "/assets/img/news/fastcompany.webp"
+
+- type: news
+  date: 2026-08-17
+  text: "I will serve as Sustainability Co-Chair for UIST 2026 with Jasmine Lu."
+  link:
+  link_label:
+  image: "/assets/img/news/UIST26.jpg"
+
+- type: paper
+  date: 2026-08-09
+  text: "TherMosaic was accepted to UIST 2026. Congratulations to the team!"
+  highlight: 
+  link:
+  link_label:
+  image: "/assets/img/news/UIST26.jpg"
+
+- type: news
+  date: 2026-07-23
+  text: "I will serve as an Associate Chair for CHI 2027, supporting its new review format."
+  link:
+  link_label:
+  image: "/assets/img/news/CHI27.jpeg"
+
+- type: news
+  date: 2026-05-07
+  text: "Successfully defended my Ph.D. dissertation. Thank you to my advisor Dr. Huaishu Peng, committee members Dr. Josiah Hester, Dr. John P. Fisher, and Dr. Nirupam Roy, and Dr. Jun Nishida, and all my collaborators for their support and guidance!"
+  link:
+  link_label:
+  image: "/assets/img/news/defense.jpeg"
+
 - type: paper
   date: 2026-01-17
   text: "Two papers are conditionally accepted to CHI 26."

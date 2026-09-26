@@ -10,19 +10,54 @@ title: "Zeyu Yan"
   </div>
   <section class="home-hero">
     <div class="home-hero-left">
+      <div class="home-hero-right">
+        <img src="/assets/img/headshot.webp"
+          alt="Portrait of Zeyu Yan"
+          class="home-avatar">
+        <h1 class="home-name">Zeyu Yan 燕泽宇</h1>
+        <p class="home-affiliation">
+          School of Interactive Computing, Georgia Tech
+        </p>
+        <p class="home-affiliation">
+          School of Electrical and Computer Engineering, Georgia Tech
+        </p>
+        <p class="home-affiliation">
+          Ulu Lāhui Foundation
+        </p>
+        <p class="home-title">
+          Postdoctoral Research Fellow | Maker | Car Enthusiast
+        </p>
+        <div class="home-icons">
+          <a href="mailto:zeyuy@umd.edu" class="icon-link" aria-label="Email">
+            <img src="/assets/img/icons/email.svg" alt="Email" class="icon-img">
+          </a>
+          <a href="https://scholar.google.com/citations?hl=en&user=hZLGZQIAAAAJ"
+            class="icon-link" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar">
+            <img src="/assets/img/icons/scholar.svg" alt="Google Scholar" class="icon-img">
+          </a>
+          <a href="https://www.linkedin.com/in/zeyu-yan"
+            class="icon-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <img src="/assets/img/icons/linkedin.svg" alt="LinkedIn" class="icon-img">
+          </a>
+          <a href="/assets/files/Zeyu-Yan-CV.pdf"
+            class="icon-link" target="_blank" rel="noopener noreferrer" aria-label="Curriculum Vitae">
+            <img src="/assets/img/icons/cv.svg" alt="CV" class="icon-img">
+          </a>
+        </div>
+      </div>
       <p class="home-hero-lead">
-          I study physical interaction, specifically how smart hardware systems are built, evolve, and enable novel and impactful interaction experiences.
+            I am a postdoctoral research fellow at the <a href="https://kamoamoa.com/">Hale Ao o Ka Moamoa</a> School of Interactive Computing, with a courtesy appointment in the School of Electrical and Computer Engineering at the Georgia Institute of Technology. I study <span class="home-bold">physical intelligence and fabrication</span>: how digital intelligence can be embodied in physical systems, and how those systems can be fabricated for ease of manufacture, customization, reconfiguration, and sustainability.
       </p>
       <p class="home-hero-sub">
-          My work centers on <span class="home-bold">reprogramming physical matters</span> beyond their original form and function. Physical artifacts are typically rigid once produced, with their geometry and functionality tightly coupled to the creation processes, making post-production modification difficult. By exploring <span class="home-bold">novel materials</span>, <span class="home-bold">fabrication methods</span>, <span class="home-bold">design strategies</span>, and <span class="home-bold">system architectures</span>, I investigate how interactive hardware can remain adaptable over time. Such reprogrammability supports longer-lasting devices with on-demand upgrades, reduce production and logistics overhead, and develop longer-term relationships between human and physical matters.
-      </p>
-      <p class="home-hero-sub">
-          My research also examines how physical interaction can reshape how people perceive, access, and engage with the world. I develop haptic and embodied interaction systems in extended reality, and tangible interfaces that serve as accessible physical extensions. I also explore physical interaction through robotic systems.
-      </p>
-      <p class="home-hero-links">
+            I develop <span class="home-bold">embodied intelligent physical systems</span> that enhance perception in XR, expand access to technology for marginalized communities, and support intuitive learning. I also develop <span class="home-bold">accessible, localized manufacturing processes</span> that embed reprogrammability, enabling physical systems to adapt in appearance, form, and function to different needs throughout their lifecycles.
+          </p>
+          <p class="home-hero-sub">
+            Before joining Georgia Tech, I earned a Ph.D. in Computer Science from the University of Maryland, College Park, where I worked in the <a href="https://smartlab.cs.umd.edu/" target="_blank" rel="noopener noreferrer">Small Artifacts Lab</a>, and an M.S. in Mechanical Engineering from Carnegie Mellon University, where I worked in the <a href="https://morphingmatter.org/" target="_blank" rel="noopener noreferrer">Morphing Matter Lab</a>. My work has appeared in leading HCI and computer science venues, including ACM CHI and UIST.
+          </p>
+      <!-- <p class="home-hero-links">
         Explore my <a href="#publications">publications</a>,
         or learn more <a href="/about/">about me</a>.
-      </p>
+      </p> -->
       <p class="home-announcement">
         📣 I am actively seeking academic positions in HCI and related fields.
       </p>
@@ -35,38 +70,6 @@ title: "Zeyu Yan"
         <a href="/asset/files/Zeyu_Yan_CV.pdf" class="home-link">CV</a>
       </p> -->
     </div>
-    <!-- <div class="home-hero-right">
-      <img src="/assets/img/headshot.webp"
-        alt="Portrait of Zeyu Yan"
-        class="home-avatar">
-      <h1 class="home-name">Zeyu Yan 燕泽宇</h1>
-      <p class="home-affiliation">
-        Computer Science, University of Maryland
-      </p>
-      <p class="home-title">
-        HCI Ph.D. Candidate｜Maker | Car Enthusiast
-      </p>
-      <div class="home-icons">
-        <a href="mailto:zeyuy@umd.edu" class="icon-link" aria-label="Email">
-          <img src="/assets/img/icons/email.svg" alt="Email" class="icon-img">
-        </a>
-        <a href="https://scholar.google.com/citations?hl=en&user=hZLGZQIAAAAJ"
-          class="icon-link" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar">
-          <img src="/assets/img/icons/scholar.svg" alt="Google Scholar" class="icon-img">
-        </a>
-        <a href="https://www.linkedin.com/in/zeyu-yan"
-          class="icon-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-          <img src="/assets/img/icons/linkedin.svg" alt="LinkedIn" class="icon-img">
-        </a>
-        <a href="/assets/files/Zeyu-Yan-CV.pdf"
-          class="icon-link" target="_blank" rel="noopener noreferrer" aria-label="Curriculum Vitae">
-          <img src="/assets/img/icons/cv.svg" alt="CV" class="icon-img">
-        </a>
-      </div>
-    </div> -->
-    <!-- <p class="home-announcement">
-        📣 I am actively seeking academic positions in HCI and related fields.
-    </p> -->
   </section>
 </section>
 

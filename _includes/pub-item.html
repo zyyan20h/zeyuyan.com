@@ -2,7 +2,11 @@
 
     <!-- Left: image -->
     <div class="pub-image">
+        {% if pub.image %}
         <img src="{{ pub.image | relative_url }}" alt="publication image" class="pub-image">
+        {% else %}
+        <div class="pub-image-placeholder" role="img" aria-label="Publication image not available yet"></div>
+        {% endif %}
     </div>
 
     <!-- Right: metadata -->
