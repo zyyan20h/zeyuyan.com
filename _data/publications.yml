@@ -1,10 +1,11 @@
 
-# - year: 2026
-#   venue: UIST 2026 (To appear)
-#   title: "TherMosaic: Accelerating Perceived Thermal Transitions Through Spatiotemporal Thermal Feedback"
-#   authors: "Zining Zhang, Jiasheng Li, Myungin Lee, Zeyu Yan, Jin Ryong Kim, Huaishu Peng"
-#   image: "/assets/img/pubs/thermosaic.png"
-#   pdf: "/assets/files/papers/thermosaic.pdf"
+- year: 2026
+  venue: UIST 2026 (To appear)
+  title: "TherMosaic: Accelerating Perceived Thermal Transitions Through Spatiotemporal Thermal Feedback"
+  authors: "Zining Zhang, Jiasheng Li, Myungin Lee, Zeyu Yan, Jin Ryong Kim, Huaishu Peng"
+  image: "/assets/img/pubs/thermosaic.png"
+  pdf: "/assets/files/papers/thermosaic.pdf"
+  doi: "https://doi.org/10.1145/3830398.3830489"
 
 - year: 2026
   venue: CHI 2026
